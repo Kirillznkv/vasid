@@ -29,7 +29,7 @@ int		main()
 	line[i--] = '\0';
 	while ((line[i] = fgetc(file)) != EOF)
 		i--;
-	printf("%s", line);
+	printf("%s.", line);
 	fclose(file);
 	return (0);
 }

@@ -11,7 +11,7 @@ void	output(int a[size][size])
 	}
 }
 
-int		min_in_ar(int a[size][size], int i)
+int		max_in_ar(int a[size][size], int i)
 {
 	int		max = a[i][0];
 
@@ -39,7 +39,7 @@ int		main()
 	{
 		for (int j = 0; j < size; j++)
 		{
-			res[i][j] = a[i][j] * min_in_ar(b, i);
+			res[i][j] = a[i][j] * max_in_ar(b, i);
 		}
 	}
 	output(res);
